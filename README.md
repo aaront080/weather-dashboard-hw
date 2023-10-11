@@ -7,7 +7,7 @@ In this project, I created a weather lookup dashboard. The dashboard contains dy
 This project provided me with an opportunity to practice designing dynamic application that utilize calling on server-side APIs to retrieve searched information.
 
 
-*** View deployed appication ![HERE](./ ).
+*** View deployed appication ![HERE](https://aaront080.github.io/weather-dashboard-hw/).
 
 Snapshot
 
