@@ -11,7 +11,7 @@ This project provided me with an opportunity to practice designing dynamic appli
 
 Snapshot
 
-<img src="Day-scheduler.png" width="700px">
+<img src="Project-screenshot.jpg" width="700px">
 
 Credits
 -Xpert Learning Assistant for general questions and examples
