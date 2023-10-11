@@ -46,6 +46,7 @@ function currentWeather(city) {
                <p>Wind: ${cityWeather.wind.speed}</p>
                <p>Humidity: ${cityWeather.main.humidity}</p>               
                `);
+               
                $("#cityWeather").append(searchCity)
      })
 }
@@ -58,6 +59,28 @@ function fiveDayForecast(lat, lon) {
      }).then(function(forecastResponse) {
           console.log(forecastResponse);
           $("#fiveDayForecast").empty();
+
+          for (var i = 1; i <= 5; i++) {
+               var day;
+               var temp;
+               var icon;
+               var wind;
+               var humidity;
+
+               day = forecastResponse.list[i].dt;
+               day = dayjs.unix(day).format("MM/DD/YYYY")
+
+
+               var dateInfo = { 
+                    
+                    date: forecastResponse.list[i].dt,
+                    forecastIcon: forecastResponse.list[i].weather[0].icon,
+                    temperature: forecastResponse.list.main.temp,
+                    humidity: forecastResponse.list.main.humidity
+                    
+               }
+
+          }
      })
      
 
