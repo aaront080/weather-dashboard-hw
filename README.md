@@ -16,7 +16,7 @@ Snapshot
 Credits
 -Xpert Learning Assistant for general questions and examples
 
--jQuery $(this) Selector Tutorial
+-[Bootstrap layout resource](https://getbootstrap.com/docs/4.0/layout/overview/)]
 
 -jQuery DOM Traversal Tutorial
 
