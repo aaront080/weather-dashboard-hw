@@ -1,4 +1,4 @@
-# Day Scheduler Project
+# Weather Dashboard Project
 
 ## Description
 
@@ -18,12 +18,12 @@ Credits
 
 -[Bootstrap layout resource](https://getbootstrap.com/docs/4.0/layout/overview/)]
 
--jQuery DOM Traversal Tutorial
+-[Bootstrap components resource](https://getbootstrap.com/docs/4.0/components/alerts/)
 
--jQuery DOM Manipulation Tutorial
+-[jQuery ajax resource](https://api.jquery.com/jquery.ajax/)
 
--https://www.geeksforgeeks.org/difference-between-this-and-this-in-jquery/
+-[Open Weather 5 day forecast resouce](https://openweathermap.org/forecast5)
 
--https://www.w3schools.com/jsref/prop_win_localstorage.asp
+-[Open Weather current weather data resource](https://openweathermap.org/current)
 
--https://www.delftstack.com/howto/jquery/jquery-local-storage/
+-[Local storage resource](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
