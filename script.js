@@ -26,16 +26,17 @@ function currentWeather(search) {
                
                $("#cityWeather").append(searchCity)
 
-               var lat = cityWeather.city.coord.lat;
-               var lon = cityWeather.city.coord.lon;
+               
      })
 }
+
+
+
 
 function fiveDayForecast(lat, lon) {
 
      var forecastUrl = `api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid={APIkey}&units=imperial`
-     var lat = cityWeather.city.coord.lat;
-     var lon = cityWeather.city.coord.lon;
+     
 
      $.ajax({
           url: forecastUrl,
