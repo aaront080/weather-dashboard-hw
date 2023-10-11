@@ -7,14 +7,14 @@ var searchHistory = [];
 function currentWeather(search) {
      var queryUrl = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${APIkey}&units=imperial`;
      $.ajax({
-          url: queryUrl,
+          url: queryUrl,   //calls to open weather to retrieve query data
           method: "GET"
      }).then(function(cityWeather) {
           console.log(cityWeather);
 
-        
+        //inputting needed url info to generate weather icon
           var iconLink = `https://openweather.org/img/wn/${cityWeather.weather[0].icon}@2x.png`;
-
+//creating HTML block to append in #cityWeather section
           var searchCity = $(`
                <h3>${cityWeather.name}<span></h3>
                <img src="${iconLink}" />           
@@ -99,7 +99,7 @@ function fiveDayForecast(lat, lon) {
      
 }
 
-$("#searchBtn").on("click", function(event) {
+$("#searchBtn").on("click", function(event) {   //creating click event
      event.preventDefault();
 
      var search = $("#cityName").val().trim();
@@ -109,9 +109,9 @@ $("#searchBtn").on("click", function(event) {
                var previousSearch = $(`
                     <li class="list-group-item">${search}</li>
                     `);
-               $("#pastSearch").append(previousSearch);
+               $("#pastSearch").append(previousSearch);    //adding search history to search history list
           };
-          localStorage.setItem('search', JSON.stringify(searchHistory));
+          localStorage.setItem('search', JSON.stringify(searchHistory)); //saving to local storage 
           console.log(searchHistory);
 
 })
